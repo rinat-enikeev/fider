@@ -36,10 +36,6 @@ window.addEventListener("error", (evt: ErrorEvent) => {
   }
 })
 
-if (window.location.protocol === `http:`) {
-  window.location.protocol = `https:`
-}
-
 const bootstrapApp = (i18n: I18n) => {
   const component = AsyncPage(fider.session.page)
   document.body.className = classSet({
